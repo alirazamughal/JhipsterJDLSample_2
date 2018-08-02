@@ -1,0 +1,32 @@
+entity Customer{
+	custId Integer,
+	custName String,
+    custEmail String,
+    custAddress String
+}
+
+entity Corder{
+	orderId Integer,
+    orderDate LocalDate    
+}
+
+entity CorderDetail{
+	custID Integer,
+    orderId Integer,
+    itemID Integer,
+    qty Integer,
+    unitPrice Double
+}
+
+relationship OneToMany{
+	CorderDetail{customer(custId)} to Customer
+}
+    
+
+relationship OneToMany{
+ CorderDetail{corder(orderId)} to Corder
+}
+
+dto * with mapstruct
+service all with serviceImpl
+angularSuffix * with mySuffix
