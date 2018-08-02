@@ -1,0 +1,39 @@
+{
+    "name": "Customer",
+    "fields": [
+        {
+            "fieldName": "custId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "custName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "custEmail",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "custAddress",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "corderDetail",
+            "otherEntityName": "corderDetail",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180802162526",
+    "entityTableName": "customer",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

@@ -1,0 +1,49 @@
+{
+    "name": "CorderDetail",
+    "fields": [
+        {
+            "fieldName": "custID",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "orderId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "itemID",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "qty",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "unitPrice",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "customer",
+            "otherEntityName": "customer",
+            "otherEntityRelationshipName": "corderDetail"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "corder",
+            "otherEntityName": "corder",
+            "otherEntityRelationshipName": "corderDetail"
+        }
+    ],
+    "changelogDate": "20180802162528",
+    "entityTableName": "corder_detail",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

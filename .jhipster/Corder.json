@@ -1,0 +1,31 @@
+{
+    "name": "Corder",
+    "fields": [
+        {
+            "fieldName": "orderId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "orderDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "corderDetail",
+            "otherEntityName": "corderDetail",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180802162527",
+    "entityTableName": "corder",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}
